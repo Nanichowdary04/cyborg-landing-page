@@ -1,0 +1,95 @@
+{
+  "system": "CYBERCORE-MK-VII",
+  "status": "OPERATIONAL",
+  "last_calibration": "2026-11-17T12:00:00Z",
+  "environment": {
+    "core_temperature_celsius": 36.8,
+    "ambient_temperature_celsius": 21.4,
+    "internal_bus_voltage_v": 48.2,
+    "leakage_current_microamps": 0.04
+  },
+  "actuators": [
+    {
+      "joint_id": "J01_CERVICAL_PITCH",
+      "dof": "Pitch",
+      "angle_degrees": 12.4,
+      "torque_nm": 42.1,
+      "velocity_rad_s": 1.85,
+      "temperature_celsius": 34.2,
+      "health_pct": 99.8
+    },
+    {
+      "joint_id": "J02_CERVICAL_YAW",
+      "dof": "Yaw",
+      "angle_degrees": -8.1,
+      "torque_nm": 31.6,
+      "velocity_rad_s": 2.1,
+      "temperature_celsius": 33.9,
+      "health_pct": 100.0
+    },
+    {
+      "joint_id": "J03_SCAPULAR_ELEVATION",
+      "dof": "Elevation",
+      "angle_degrees": 24.5,
+      "torque_nm": 88.0,
+      "velocity_rad_s": 1.2,
+      "temperature_celsius": 35.1,
+      "health_pct": 99.4
+    },
+    {
+      "joint_id": "J04_GLENOHUMERAL_ABDUCTION",
+      "dof": "Abduction",
+      "angle_degrees": 45.0,
+      "torque_nm": 112.4,
+      "velocity_rad_s": 2.4,
+      "temperature_celsius": 36.4,
+      "health_pct": 98.9
+    },
+    {
+      "joint_id": "J05_ELBOW_FLEXION",
+      "dof": "Flexion",
+      "angle_degrees": 92.3,
+      "torque_nm": 145.2,
+      "velocity_rad_s": 3.1,
+      "temperature_celsius": 37.1,
+      "health_pct": 99.2
+    },
+    {
+      "joint_id": "J06_WRIST_PRONATION",
+      "dof": "Pronation",
+      "angle_degrees": -15.6,
+      "torque_nm": 28.5,
+      "velocity_rad_s": 4.5,
+      "temperature_celsius": 33.4,
+      "health_pct": 100.0
+    }
+  ],
+  "neural_bus": {
+    "total_channels": 64,
+    "active_channels": 64,
+    "sampling_rate_hz": 4000,
+    "snr_db": 84.6,
+    "intent_prediction_latency_ms": 0.42,
+    "classification_accuracy_pct": 99.41,
+    "band_power": {
+      "theta_4_8hz": 0.12,
+      "alpha_8_12hz": 0.18,
+      "beta_13_30hz": 0.44,
+      "gamma_30_100hz": 0.26
+    }
+  },
+  "tactile_skin": {
+    "phalanx_nodes": 600,
+    "contact_force_total_n": 14.8,
+    "slip_detection_status": "STABLE",
+    "shear_vector": { "x": 0.04, "y": -0.02, "z": 1.15 },
+    "thermal_conductivity_w_mk": 0.24
+  },
+  "battery": {
+    "chemistry": "Li-Ion Solid State",
+    "state_of_charge_pct": 94.2,
+    "discharge_rate_watts": 68.4,
+    "estimated_runtime_hours": 16.5,
+    "cycle_count": 87
+  }
+}
